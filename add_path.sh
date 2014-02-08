@@ -1,2 +1,2 @@
 CD=`pwd`
-ln -s ${CD}/tmux.conf ~/.tmux.conf
+ln -s ${CD}/.tmux.conf ~/.tmux.conf
