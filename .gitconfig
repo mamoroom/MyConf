@@ -1,0 +1,18 @@
+[user]
+	email = mamorupao@gmail.com
+	name = muraji
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+	ci = commit
+	co = checkout
+	br = branch
+	st = status
+	graph = log --graph -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+
+[push]
+	default = tracking
+
