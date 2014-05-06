@@ -10,12 +10,13 @@ set backspace =indent,eol,start
 set hlsearch
 
 
-" vundleを使うためのおまじない
 syntax on
 :highlight Pmenu ctermfg=DarkGreen
 filetype plugin indent on
-set rtp+=~/.vim/vundle/
-call vundle#rc('~/.vim/bundle')
+
+" vundleを使うためのおまじない
+"set rtp+=~/.vim/vundle/
+"call vundle#rc('~/.vim/bundle')
 
 " 使うプラグインを指定
 "Bundle 'petdance/vim-perl'
