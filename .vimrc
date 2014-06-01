@@ -5,14 +5,39 @@ set visualbell
 set number
 set smartindent
 set tabstop=4
-set backspace =indent,eol,start 
+set autoindent
+set shiftwidth=4
+
+set backspace =indent,eol,start
 
 set hlsearch
-
+set list
+set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
 
 syntax on
 :highlight Pmenu ctermfg=DarkGreen
 filetype plugin indent on
+
+" 全角スペース・行末のスペース・タブの可視化
+if has("syntax")
+	syntax on
+	" PODバグ対策
+	syn sync fromstart
+	function! ActivateInvisibleIndicator()
+		" 下の行の"　"は全角スペース
+		syntax match InvisibleJISX0208Space "　" display containedin=ALL
+		highlight InvisibleJISX0208Space term=underline ctermbg=Blue guibg=darkgray gui=underline
+	endfunction
+	augroup invisible
+	autocmd! invisible
+	autocmd BufNew,BufRead * call ActivateInvisibleIndicator()
+	augroup END
+endif
+
+" key bind
+nnoremap <silent>,ga :<C-u>! git add %<CR>
+
+
 
 " vundleを使うためのおまじない
 "set rtp+=~/.vim/vundle/
