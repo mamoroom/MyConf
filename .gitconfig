@@ -12,7 +12,8 @@
 	br = branch
 	st = status
 	graph = log --graph -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-
+[merge]
+	ff = no
 [push]
 	default = tracking
 

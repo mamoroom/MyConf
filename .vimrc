@@ -16,7 +16,7 @@ set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
 
 syntax on
 :highlight Pmenu ctermfg=DarkGreen
-filetype plugin indent on
+"filetype plugin indent on
 
 " 全角スペース・行末のスペース・タブの可視化
 if has("syntax")
@@ -36,6 +36,9 @@ endif
 
 " key bind
 nnoremap <silent>,ga :<C-u>! git add %<CR>
+nnoremap <silent>,pe :<C-u>! perl %<CR>
+nnoremap <silent><C-p> :<C-u>! perl -c %<CR>
+inoremap <C-d> use Data::Dumper; print Dumper($hoge);<CR>
 
 
 
