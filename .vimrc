@@ -15,6 +15,7 @@ set list
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%
 
 syntax on
+filetype plugin indent on
 :highlight Pmenu ctermfg=DarkGreen
 "filetype plugin indent on
 
