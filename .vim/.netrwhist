@@ -1,7 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/mamoru/git/bitbucket-Murazi80/pplug/.elasticbeanstalk/.elasticbeanstalk'
-let g:netrw_dirhist_2='/Users/mamoru/git/bitbucket-Murazi80/pplug/pplug_consumer_app/pplug_consumer_app/__pycache__'
-let g:netrw_dirhist_3='/Users/mamoru/git/php/imagesearch'
-let g:netrw_dirhist_4='/Users/mamoru/git/php/imagesearch/deploy'
-let g:netrw_dirhist_5='/Users/mamoru/git/github-muraji/imagesearch/image2title'
+let g:netrw_dirhist_cnt =0
