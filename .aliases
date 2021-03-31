@@ -1,1 +1,6 @@
 alias ll='ls -l'
+alias tmux='tmux -u'
+alias ag='ag -a --hidden'
+alias tmoff='tmux set mouse off'
+alias tmon='tmux set mouse on'
+alias drm="docker rm `docker ps -f 'status=exited' -q`"

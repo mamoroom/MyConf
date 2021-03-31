@@ -1,2 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/mamoru/go/1.13.10/src/github.com/frankyhq/sinca/.git/modules/admin/viron'
+let g:netrw_dirhist_3='/Users/mamoru/go/1.13.10/src/github.com/frankyhq/sinca/.git'
+let g:netrw_dirhist_2='/Users/mamoru/git/github-mamoroom/mock-shopify-themekit/dev-murakami/109875495075/config'
+let g:netrw_dirhist_1='/Users/mamoru/git/github-VALU-Team/jba-test-backend/reference'
